@@ -23,7 +23,7 @@ function Skills() {
           <h2 className="py-4">What I can do</h2>
         </div>
         <div className="flex flex-col md:flex-row gap-8 items-center justify-between ">
-          <p className="">
+          <p className="text-gray-600">
             iuyft ity ytrdytr iyut it iy ytr fditai dut a df sd fs gisjgij is
             ;is df sodf;s df;o sdfo sdf s ofs;o fs dfs fd;o sdf itdfiasuydgfis
             uy flis lis odiyf sody fsuy duoys

@@ -82,19 +82,54 @@ function Navbar() {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link scroll={false} href="/#home">
-                <li className="py-4 text-sm">Home</li>
+                <li
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  className="py-4 text-sm"
+                >
+                  Home
+                </li>
               </Link>
               <Link scroll={false} href="/#about">
-                <li className="py-4 text-sm">About</li>
+                <li
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  className="py-4 text-sm"
+                >
+                  About
+                </li>
               </Link>
               <Link scroll={false} href="/#skills">
-                <li className="py-4 text-sm">Skills</li>
+                <li
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  className="py-4 text-sm"
+                >
+                  Skills
+                </li>
               </Link>
               <Link scroll={false} href="/#projects">
-                <li className="py-4 text-sm">Projects</li>
+                <li
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  className="py-4 text-sm"
+                >
+                  Projects
+                </li>
               </Link>
               <Link scroll={false} href="/#contact">
-                <li className="py-4 text-sm">Contact</li>
+                <li
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  className="py-4 text-sm"
+                >
+                  Contact
+                </li>
               </Link>
             </ul>
             <div className="pt-40">
