@@ -2,11 +2,12 @@ import React from "react";
 
 function Contact() {
   return (
-    <div id="contact" className="w-full h-screen text-center">
-      <div className=" max-w-[1240px] w-full h-full mx-auto p-2 flex items-center justify-center">
-        <div className="text-gray-800">
-          <h1 className="p-4">Contact</h1>
-        </div>
+    <div id="contact" className="w-full ">
+      <div className="max-w-[1240px] mx-auto px-16">
+        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+          Contact
+        </p>
+        <h2 className="py-4">Get in touch</h2>
       </div>
     </div>
   );
