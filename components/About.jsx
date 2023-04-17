@@ -4,7 +4,7 @@ import headshot from "../public/assests/headshot.png";
 
 function About() {
   return (
-    <div id="about" className="w-full flex flex-col items-center py-8">
+    <div id="about" className="w-full flex flex-col items-center py-24">
       <div className="max-w-[1240px] mx-auto px-16 md:grid grid-cols-3 gap-8">
         <div className="col-span-2 ">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">

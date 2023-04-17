@@ -1,26 +1,59 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkCol, setLinkCol] = useState("#1f2937");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === "/brewlog" ||
+      router.asPath === "/mushi" ||
+      router.asPath === "/games" ||
+      router.asPath === "/portfolio"
+    ) {
+      setNavBg("transparent");
+      setLinkCol("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkCol("#1f2937");
+    }
+  }, [router]);
+
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div
+      style={{ backgroundColor: `${navBg}` }}
+      className="fixed w-full h-20 shadow-xl z-[100] "
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/../public/assests/logo.png"
-          alt="/"
-          width="60"
-          height="60"
-        />
+        <Link href="/">
+          <Image
+            style={
+              linkCol === "#ecf0f3"
+                ? {
+                    filter:
+                      "invert(100%) sepia(0%) saturate(0%) hue-rotate(303deg) brightness(104%) contrast(102%)",
+                  }
+                : {}
+            }
+            src="/../public/assests/logo.png"
+            alt="/"
+            width="60"
+            height="60"
+          />
+        </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkCol}` }} className="hidden md:flex">
             <Link scroll={false} href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
@@ -41,7 +74,11 @@ function Navbar() {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className=" md:hidden">
+          <div
+            style={{ color: `${linkCol}` }}
+            onClick={handleNav}
+            className=" md:hidden"
+          >
             <AiOutlineMenu size={25} />
           </div>
         </div>

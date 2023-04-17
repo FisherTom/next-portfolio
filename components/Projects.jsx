@@ -2,11 +2,12 @@ import React from "react";
 import beerImg from "../public/assests/brew-log.png";
 import mushImg from "../public/assests/mush6.jpg";
 import boardImg from "../public/assests/bgb2.png";
+import portfolioImg from "../public/assests/portfolio.png";
 import ProjectItem from "./ProjectItem";
 
 function Projects() {
   return (
-    <div id="projects" className="w-full py-8">
+    <div id="projects" className="w-full py-24">
       <div className="max-w-[1240px] mx-auto px-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
@@ -16,22 +17,26 @@ function Projects() {
           <ProjectItem
             title="Brew Log App"
             backgroundImg={beerImg}
+            stack={["React.js", "Tailwind", "Node.js", "MongoDB", "Express"]}
             projectUrl="/brewlog"
           />
           <ProjectItem
-            title="Brew Log App"
+            title="Mushroom Forraging App"
             backgroundImg={mushImg}
-            projectUrl="/brewlog"
+            stack={["React Native", "Expo", "Node.js", "MongoDB", "Express"]}
+            projectUrl="/mushi"
           />
           <ProjectItem
-            title="Brew Log App"
+            title="Review Site"
             backgroundImg={boardImg}
-            projectUrl="/brewlog"
+            stack={["React.js", "PSQL", "Express", "Jest"]}
+            projectUrl="/games"
           />
           <ProjectItem
-            title="Brew Log App"
-            backgroundImg={beerImg}
-            projectUrl="/brewlog"
+            title="Portfolio Site"
+            backgroundImg={portfolioImg}
+            stack={["Next.js", "Tailwind"]}
+            projectUrl="/portfolio"
           />
         </div>
       </div>
