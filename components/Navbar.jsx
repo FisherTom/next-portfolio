@@ -92,10 +92,7 @@ function Navbar() {
           <div className="">
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <h1
-                  style={{ color: linkCol }}
-                  className="text-3xl font-extrabold "
-                >
+                <h1 className="text-3xl font-extrabold ">
                   Tom <span className="text-[#5651e5] font-light">Fisher</span>
                 </h1>
               </Link>

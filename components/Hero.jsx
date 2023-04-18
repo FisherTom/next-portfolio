@@ -3,6 +3,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { HiDocumentText } from "react-icons/hi";
+import { FaMapMarker } from "react-icons/fa";
+
 function Hero() {
   const [isAtTop, setIsAtTop] = useState(true);
 
@@ -26,26 +28,32 @@ function Hero() {
           </h1>
           <h2 className="font-light">Full-stack web Developer</h2>
           <p>Creative developer currently seeking job opportunities.</p>
-          <div className="flex flex-col items-center justify-center">
-            <div className="flex p-16 gap-10 items-center justify-center">
+
+          <div className="flex justify-center gap-2 items-center">
+            <FaMapMarker />
+            <p>Sheffield, UK </p>
+          </div>
+
+          <div className="flex flex-col gap-4 items-center justify-center">
+            <div className="flex p-8 gap-8 items-center justify-center">
               <a
                 href="https://www.linkedin.com/in/thomas-fisher-098ab496/"
                 target="_blank"
               >
-                <SiLinkedin size={40} />
+                <SiLinkedin size={30} />
               </a>
               <a href="https://github.com/FisherTom" target="_blank">
-                <SiGithub size={40} />
+                <SiGithub size={30} />
               </a>
               <a href="https://www.instagram.com/end.shape/" target="_blank">
-                <SiInstagram size={40} />
+                <SiInstagram size={30} />
               </a>
               <a href="mailto:tfisher92@gmail.com" target="_blank">
-                <AiOutlineMail size={40} />
+                <AiOutlineMail size={30} />
               </a>
             </div>
             <a href="https://fishertom.github.io/cv/" target="_blank">
-              <div className="flex items-center justify-center gap-2 rounded-2xl border-4 border-gray-800  w-fit p-2">
+              <div className="flex items-center justify-center gap-2 rounded-2xl  w-fit p-2">
                 <HiDocumentText size={30} />
                 <p className="font-bold">Link to CV</p>
               </div>
