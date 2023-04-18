@@ -36,24 +36,16 @@ function Navbar() {
       className="fixed w-full h-20 shadow-xl z-[100] "
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/">
-          <Image
-            style={
-              linkCol === "#ecf0f3"
-                ? {
-                    filter:
-                      "invert(100%) sepia(0%) saturate(0%) hue-rotate(303deg) brightness(104%) contrast(102%)",
-                  }
-                : {}
-            }
-            src="/../public/assests/logo.png"
-            alt="/"
-            width="60"
-            height="60"
-          />
+        <Link className="px-4" href="/">
+          <h1 style={{ color: linkCol }} className="text-3xl font-extrabold ">
+            Tom <span className="text-[#5651e5] font-light">Fisher</span>
+          </h1>
+          <p style={{ color: linkCol }} className="tracking-widest">
+            Developer Portfolio
+          </p>
         </Link>
         <div>
-          <ul style={{ color: `${linkCol}` }} className="hidden md:flex">
+          <ul style={{ color: `${linkCol}` }} className="px-4 hidden md:flex">
             <Link scroll={false} href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>

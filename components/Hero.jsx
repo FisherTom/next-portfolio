@@ -21,8 +21,10 @@ function Hero() {
     <div id="home" className="w-full h-screen text-center">
       <div className=" max-w-[1240px] w-full h-full mx-auto p-2 flex items-center justify-center">
         <div className="flex flex-col gap-4 w-full p-4 text-gray-800">
-          <h1>Tom Fisher</h1>
-          <h2>Full-stack web Developer</h2>
+          <h1>
+            Tom <span className="font-light text-[#5651e5]">Fisher</span>
+          </h1>
+          <h2 className="font-light">Full-stack web Developer</h2>
           <p>Creative developer currently seeking job opportunities.</p>
           <div className="flex flex-col items-center justify-center">
             <div className="flex p-16 gap-10 items-center justify-center">
