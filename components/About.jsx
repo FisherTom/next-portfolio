@@ -27,9 +27,9 @@ function About() {
           <p className="py-2 text-gray-600">
             The course put a strong emphasis on best practices including
             Test-Driven Development, agile methodology, and Git Flow. I have
-            loved the experience of learning to code so far and I'm now excited
-            to find opportunities that will allow me to continue to grow my
-            skill set.
+            loved the experience of learning to code so far and I&apos;m now
+            excited to find opportunities that will allow me to continue to grow
+            my skill set.
           </p>
           <p className="py-2 text-gray-600">
             I come from a design / engineering background and have strong
@@ -39,7 +39,7 @@ function About() {
           </p>
         </div>
         <div className="w-full max-w-[400px] h-auto m-auto shadow-xl rounded-full flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <Image className="rounded-full" src={headshot} />
+          <Image className="rounded-full" src={headshot} alt="/" />
         </div>
       </div>
     </div>
