@@ -49,10 +49,10 @@ function brewlog() {
             Live Demo -
             <a
               className="text-blue-600"
-              href="https://brew-logger.netlify.app/"
+              href="https://fishertom.github.io/P5_sketches/"
             >
               {" "}
-              brew-logger.netlify.app
+              fishertom.github.io/P5_sketches/
             </a>
           </p>
         </div>
