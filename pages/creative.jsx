@@ -30,17 +30,17 @@ function brewlog() {
           <p className="text-gray-600   ">
             I first became interested in coding learning about P5.js, a
             Javascript library for drawing graphics to a HTML canvas. It proved
-            a usfull tool in learning fundamental principals such as object
-            orientated programing and recursion. I used a pen plotter to turn
-            some of these 'code sketches' into physical prints which can be
-            found on my{" "}
+            a useful tool in learning fundamental principles such as object
+            oriented programing and recursion. I used a pen plotter to turn some
+            of these 'code sketches' into physical prints which can be found on
+            my{" "}
             <a
               href="https://www.instagram.com/end.shape/"
               className="text-blue-600"
             >
               Instagram
             </a>
-            . Live versions of some of these sketches van be viewed by following
+            . Live versions of some of these sketches can be viewed by following
             the link below.
           </p>
 
