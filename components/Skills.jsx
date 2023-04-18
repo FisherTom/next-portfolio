@@ -23,11 +23,13 @@ function Skills() {
           <h2 className="py-4">What I can do</h2>
         </div>
         <div className="flex flex-col md:flex-row gap-8 items-center justify-between ">
-          <p className="text-gray-600">
-            HTML | CSS | JavaScript | Node.js | React.js | React Native |
-            Next.js | Tailwind | Bootstrap | Firebase | Express | PSQL | MongoDB
-            | Jest | Git
-          </p>
+          <div className="flex flex-col gap-8">
+            <p className="text-gray-600 tracking-widest">
+              HTML | CSS | JavaScript | Node.js | React.js | React Native |
+              Next.js | Tailwind | Bootstrap | Firebase | Express | PSQL |
+              MongoDB | Jest | Git
+            </p>
+          </div>
           <div className="  grid grid-cols-3 gap-8 min-w-[260px]">
             <SiJavascript className="text-6xl hover:scale-105 ease-in duration-300" />
             <SiReact className="text-6xl hover:scale-105 ease-in duration-300" />

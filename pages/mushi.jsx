@@ -42,18 +42,21 @@ function brewlog() {
           </p>
           <h3>Stack</h3>
           <p>
-            The front end was built using React Native and Expo. It uses built
-            in functionality of React Native for user location, maps, taking /
-            selecting images. Firebase is used for secure user authentication
-            and cloud storage of user generated content.
-            <br />
-            <br />
-            The database was made using MongoDB to store data about sightings
-            and mushroom species info. HTTP requests are handled by Express,
+            The front end was built using React Native and Expo. It uses
+            built-in functionality of React Native for user location, maps,
+            taking / selecting images. Firebase is used for secure user
+            authentication and cloud storage of user generated content. The
+            database was made using MongoDB to store data about sightings and
+            mushroom species info. HTTP requests are handled by Express,
             integration tests were written for all endpoints using Jest.
           </p>
           <h3>Hurdles</h3>
-          <p></p>
+          <p>
+            This was a group project completed over the course of two weeks.
+            Defining tasks early on and then focusing on implementing features
+            to meet the MVP while using agile work practices made sure we got
+            the work done on time.{" "}
+          </p>
           <h3>Links</h3>
           <p>
             Front-end repo -

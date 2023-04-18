@@ -3,6 +3,7 @@ import beerImg from "../public/assests/brew-log.png";
 import mushImg from "../public/assests/mush6.jpg";
 import boardImg from "../public/assests/bgb2.png";
 import portfolioImg from "../public/assests/portfolio.png";
+import sketchImg from "../public/assests/sketch2.png";
 import ProjectItem from "./ProjectItem";
 
 function Projects() {
@@ -37,6 +38,12 @@ function Projects() {
             backgroundImg={portfolioImg}
             stack={["Next.js", "Tailwind"]}
             projectUrl="/portfolio"
+          />
+          <ProjectItem
+            title="Creative Coding"
+            backgroundImg={sketchImg}
+            stack={["JavaScript", "P5.js", "🛠"]}
+            projectUrl="/creative"
           />
         </div>
       </div>

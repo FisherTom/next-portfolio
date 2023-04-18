@@ -11,20 +11,33 @@ function brewlog() {
           <p className="text-white">Next.js | Tailwind</p>
         </div>
       </div>
-      <div className="p-16 flex flex-col md:flex-row justify-center gap-16 ">
-        <div className="shadow-xl shadow-gray-400 rounded-xl p-4 w-fit shrink order-2 md:order-1">
-          <Image className="max-h-[400px] w-auto" src={portfolioImg} alt="/" />
+      <div className="p-16 max-w-[1240px] m-auto flex flex-col md:flex-row justify-center gap-16 ">
+        <div className="shadow-xl shadow-gray-400 rounded-xl p-4 w-fit h-fit shrink order-2 md:order-1">
+          <Image className="min-w-[300px] w-auto" src={portfolioImg} alt="/" />
         </div>
         <div className="order-1 md:order-2 flex flex-col gap-4">
           <h3>Idea</h3>
           <p className="text-gray-600   ">
-            I like to make beer - and I like to code. So I made an app to keep
-            track of brewing recipies.
+            A place to show off my work and (hopefully) get hired!
           </p>
           <h3>Stack</h3>
-          <h3>Hurdles</h3>
-          <p></p>
+          <p>
+            I wanted to learn a meta-framework so I chose Next.js to build my
+            portfolio. This site takes advantage of Next.js’ lazy image loading
+            to improve response time and boost SEO. Next.js has other features
+            including server side rendering which I hope to make use of in my
+            next project. I also took this as an opportunity to improve my
+            Tailwind skills to make a site that is visually appealing and fully
+            responsive.
+          </p>
+
           <h3>Links</h3>
+          <p>
+            Front-end repo -
+            <a className="text-blue-600" href="">
+              *LINK*
+            </a>
+          </p>
         </div>
       </div>
     </div>

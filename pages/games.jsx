@@ -35,20 +35,22 @@ function brewlog() {
           </p>
           <h3>Stack</h3>
           <p>
-            The front end is a single page react app that alows users to browse
+            The front end is a single page react app that allows users to browse
             game reviews, sorting by category, votes and date. users can then
             navigate to a review page where they can leave comments and up/down
             vote the review. The App makes use of client side routing and
-            optimistic rendering to improve the user expirience, and responsive
-            custom styling. <br />
-            <br />
-            The back end was created using Node, PostgreSQL and Express using
-            RESTfull principals and adopting the MVC pattern. The app makes use
-            of custom error handling midleware and integration testing was done
-            using Jest.
+            optimistic rendering to improve the user experience, and responsive
+            custom styling. The back end was created using Node, PostgreSQL and
+            Express using RESTful principles and adopting the MVC pattern. The
+            app makes use of custom error handling middleware and integration
+            testing was done using Jest.
           </p>
           <h3>Hurdles</h3>
-          <p></p>
+          <p>
+            Using a relational database such as PSQL was a steep learning curve,
+            using TDD and extensive integration testing I ensured my API routes
+            all worked as expected and errors were handled correctly.{" "}
+          </p>
           <h3>Links</h3>
           <p>
             Front-end repo -
