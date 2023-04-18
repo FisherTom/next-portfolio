@@ -91,12 +91,14 @@ function Navbar() {
         >
           <div className="">
             <div className="flex w-full items-center justify-between">
-              <Image
-                src="/../public/assests/logo.png"
-                alt="/"
-                width="80"
-                height="10"
-              />
+              <Link href="/">
+                <h1
+                  style={{ color: linkCol }}
+                  className="text-3xl font-extrabold "
+                >
+                  Tom <span className="text-[#5651e5] font-light">Fisher</span>
+                </h1>
+              </Link>
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -104,9 +106,7 @@ function Navbar() {
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-400 my-4">
-              <p className="w-[85%] md:w-[90%] py-4 ">Please Give Me A Job!</p>
-            </div>
+            <div className="border-b border-gray-400 my-4"></div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
