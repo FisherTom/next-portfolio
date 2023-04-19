@@ -3,6 +3,7 @@ import React from "react";
 import sketchImg from "../public/assests/sketch1.jpg";
 import sketchImg2 from "../public/assests/sketch2.jpg";
 import sketchImg3 from "../public/assests/sketch3.jpg";
+import Blocks from "@/components/Blocks";
 
 function brewlog() {
   return (
@@ -14,7 +15,7 @@ function brewlog() {
         </div>
       </div>
       <div className="p-16 max-w-[1240px] m-auto flex flex-col  justify-center gap-16 ">
-        <div className="flex gap-4 justify-evenly flex-wrap">
+        {/* <div className="flex gap-4 justify-evenly flex-wrap">
           <div className=" justify-center shadow-xl shadow-gray-400 rounded-xl p-4 w-fit">
             <Image className="max-w-[300px] " src={sketchImg} alt="/" />
           </div>
@@ -24,16 +25,18 @@ function brewlog() {
           <div className="  justify-center shadow-xl shadow-gray-400 rounded-xl p-4 w-fit ">
             <Image className="max-w-[300px] " src={sketchImg3} alt="/" />
           </div>
+        </div> */}
+        <div className="flex justify-center items-center">
+          <Blocks />
         </div>
-
         <div className=" flex flex-col gap-4">
           <p className="text-gray-600   ">
             I first became interested in coding learning about P5.js, a
-            Javascript library for drawing graphics to a HTML canvas. It proved
-            a useful tool in learning fundamental principles such as object
-            oriented programing and recursion. I used a pen plotter to turn some
-            of these &apos;code sketches&apos; into physical prints which can be
-            found on my{" "}
+            Javascript library for drawing graphics using the HTML canvas API.
+            It proved a useful tool in learning fundamental principles such as
+            object oriented programing and recursion. I used a pen plotter to
+            turn some of these &apos;code sketches&apos; into physical prints
+            which can be found on my{" "}
             <a
               href="https://www.instagram.com/end.shape/"
               className="text-blue-600"

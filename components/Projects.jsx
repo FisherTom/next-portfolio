@@ -42,7 +42,7 @@ function Projects() {
           <ProjectItem
             title="Creative Coding"
             backgroundImg={sketchImg}
-            stack={["JavaScript", "P5.js", "🛠"]}
+            stack={["JavaScript", "P5.js", "HTML", "Css", "🛠"]}
             projectUrl="/creative"
           />
         </div>
