@@ -17,8 +17,8 @@ function Blocks() {
   return (
     <div className="flex flex-col justify-center">
       <div className="grid grid-cols-8 gap-1 flex-wrap">
-        {tiles.map((tile) => (
-          <Tile animate={animate} />
+        {tiles.map((tile, i) => (
+          <Tile key={i} animate={animate} />
         ))}
       </div>
       <button
