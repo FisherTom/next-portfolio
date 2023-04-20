@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import YouTube from "react-youtube";
 import mushImg from "../public/assests/mush1.jpg";
 import mushImg2 from "../public/assests/mush2.jpg";
 import mushImg3 from "../public/assests/mush3.jpg";
@@ -19,9 +20,10 @@ function brewlog() {
           </p>
         </div>
       </div>
+
       <div className="p-16 max-w-[1240px] m-auto flex flex-col md:flex-row items-center justify-center gap-16 ">
         <div className="min-w-[350px] grid grid-cols-2 gap-4 order-2 md:order-1">
-          <div className="shadow-xl shadow-gray-400 rounded-xl p-4 w-fit h-fit shrink">
+          {/* <div className="shadow-xl shadow-gray-400 rounded-xl p-4 w-fit h-fit shrink">
             <Image className="max-h-[400px] w-auto" src={mushImg3} alt="/" />
           </div>
           <div className="shadow-xl shadow-gray-400 rounded-xl p-4 w-fit h-fit shrink">
@@ -32,7 +34,16 @@ function brewlog() {
           </div>
           <div className="shadow-xl shadow-gray-400 rounded-xl p-4 w-fit h-fit shrink">
             <Image className="max-h-[400px] w-auto" src={mushImg4} alt="/" />
-          </div>
+          </div> */}
+
+          <YouTube
+            videoId="H12P98dt2a4"
+            opts={{
+              width: "300",
+              height: "535",
+              playerVars: { autoplay: 1 },
+            }}
+          />
         </div>
         <div className="order-1 md:order-2 flex flex-col gap-4">
           <h3>Idea</h3>
