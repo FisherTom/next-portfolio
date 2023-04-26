@@ -11,7 +11,7 @@ function brewlog() {
           <p className="text-white">React.js | Node.js | MongoDB | Express</p>
         </div>
       </div>
-      <div className="p-16 max-w-[1240px] m-auto flex flex-col md:flex-row justify-center gap-16 ">
+      <div className="p-16 max-w-[1240px] m-auto flex flex-col md:flex-row justify-center items-center gap-16 ">
         <div className="shadow-xl shadow-gray-400 rounded-xl p-4 w-fit h-fit shrink order-2 md:order-1">
           <Image className="min-w-[300px] w-auto" src={beerImg} alt="/" />
         </div>

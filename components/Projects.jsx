@@ -4,6 +4,7 @@ import mushImg from "../public/assests/mush6.jpg";
 import boardImg from "../public/assests/bgb2.png";
 import portfolioImg from "../public/assests/portfolio.png";
 import sketchImg from "../public/assests/sketch2.png";
+import countdownImg from "../public/assests/countdown.png";
 import ProjectItem from "./ProjectItem";
 
 function Projects() {
@@ -26,6 +27,12 @@ function Projects() {
             backgroundImg={mushImg}
             stack={["React Native", "Expo", "Node.js", "MongoDB", "Express"]}
             projectUrl="/mushi"
+          />
+          <ProjectItem
+            title="Countdown React Game"
+            backgroundImg={countdownImg}
+            stack={["React.js", "Tailwind"]}
+            projectUrl="/countdown"
           />
           <ProjectItem
             title="Review Site"

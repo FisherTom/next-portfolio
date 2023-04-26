@@ -37,23 +37,36 @@ function Hero() {
           <div className="flex flex-col gap-4 items-center justify-center">
             <div className="flex p-8 gap-8 items-center justify-center">
               <a
+                className="hover:scale-110 ease-in duration-300"
                 href="https://www.linkedin.com/in/thomas-fisher-098ab496/"
                 target="_blank"
               >
                 <SiLinkedin size={30} />
               </a>
-              <a href="https://github.com/FisherTom" target="_blank">
+              <a
+                className="hover:scale-110 ease-in duration-300"
+                href="https://github.com/FisherTom"
+                target="_blank"
+              >
                 <SiGithub size={30} />
               </a>
-              <a href="https://www.instagram.com/end.shape/" target="_blank">
+              <a
+                className="hover:scale-110 ease-in duration-300"
+                href="https://www.instagram.com/end.shape/"
+                target="_blank"
+              >
                 <SiInstagram size={30} />
               </a>
-              <a href="mailto:tfisher92@gmail.com" target="_blank">
+              <a
+                className="hover:scale-110 ease-in duration-300"
+                href="mailto:tfisher92@gmail.com"
+                target="_blank"
+              >
                 <AiOutlineMail size={30} />
               </a>
             </div>
             <a href="https://fishertom.github.io/cv/" target="_blank">
-              <div className="flex items-center justify-center gap-2 rounded-2xl  w-fit p-2">
+              <div className="hover:scale-110 ease-in duration-300 flex items-center justify-center gap-2 rounded-2xl  w-fit p-2">
                 <HiDocumentText size={30} />
                 <p className="font-bold">Link to CV</p>
               </div>

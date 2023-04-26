@@ -9,14 +9,27 @@ function Navbar() {
   const [nav, setNav] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkCol, setLinkCol] = useState("#1f2937");
+  const [isAtTop, setIsAtTop] = useState(true);
   const router = useRouter();
 
   useEffect(() => {
+    const handleScroll = () => {
+      setIsAtTop(window.scrollY === 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     if (
-      router.asPath === "/brewlog" ||
-      router.asPath === "/mushi" ||
-      router.asPath === "/games" ||
-      router.asPath === "/portfolio"
+      (router.asPath === "/brewlog" ||
+        router.asPath === "/mushi" ||
+        router.asPath === "/games" ||
+        router.asPath === "/portfolio") &&
+      isAtTop
     ) {
       setNavBg("transparent");
       setLinkCol("#ecf0f3");
@@ -24,7 +37,7 @@ function Navbar() {
       setNavBg("#ecf0f3");
       setLinkCol("#1f2937");
     }
-  }, [router]);
+  }, [router, isAtTop]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -33,7 +46,7 @@ function Navbar() {
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
-      className="fixed w-full h-20 shadow-xl z-[100] "
+      className="fixed w-full h-20 shadow-xl z-[100] transition-colors duration-500"
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link className="px-4" href="/">
