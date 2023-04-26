@@ -27,7 +27,8 @@ function countdown() {
             <br />
             <br />I tried to replicate a game of Countdown as accurately as
             possible. The interface adapts during different phases of the game,
-            and players' words are checked by querying a free dictionary API.
+            and players&apos; words are checked by querying a free dictionary
+            API.
           </p>
           <h3>Hurdles</h3>
           <p>
