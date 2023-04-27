@@ -1,6 +1,6 @@
 import Image from "next/image";
-import React from "react";
-import beerImg from "../public/assests/countdown.png";
+import React, { useState, useRef } from "react";
+import point from "../public/assests/tap.png";
 
 function countdown() {
   return (
@@ -12,8 +12,15 @@ function countdown() {
         </div>
       </div>
       <div className="p-16 max-w-[1240px] m-auto flex flex-col md:flex-row justify-center items-center gap-16 ">
-        <div className="shadow-xl shadow-gray-400 rounded-xl p-4 w-fit h-fit shrink order-2 md:order-1">
-          <Image className="min-w-[300px] w-auto" src={beerImg} alt="/" />
+        <div className="relative transform scale-75 shadow-xl shadow-gray-400 rounded-xl p-4 w-fit h-fit shrink order-2 md:order-1">
+          <div className="p-2 absolute right-4 top-5   animate-pulse">
+            <Image className="w-16 h-16" src={point} alt="/" />
+          </div>
+
+          <iframe
+            src="https://count-down-game.netlify.app/"
+            className="w-[450px] h-[900px] "
+          ></iframe>
         </div>
         <div className="order-1 md:order-2 flex flex-col gap-4">
           <h3>Idea</h3>
