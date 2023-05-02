@@ -57,7 +57,7 @@ function Navbar() {
             Developer Portfolio
           </p>
         </Link>
-        <div>
+        <nav>
           <ul style={{ color: `${linkCol}` }} className="px-4 hidden md:flex">
             <Link scroll={false} href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
@@ -86,7 +86,7 @@ function Navbar() {
           >
             <AiOutlineMenu size={25} />
           </div>
-        </div>
+        </nav>
       </div>
       <div
         className={

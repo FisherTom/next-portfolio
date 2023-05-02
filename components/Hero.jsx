@@ -4,6 +4,7 @@ import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { HiDocumentText } from "react-icons/hi";
 import { FaMapMarker } from "react-icons/fa";
+import LinkBox from "./LinkBox";
 
 function Hero() {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -20,7 +21,7 @@ function Hero() {
   }, []);
 
   return (
-    <div id="home" className="w-full h-screen text-center">
+    <section id="home" className="w-full h-screen text-center">
       <div className=" max-w-[1240px] w-full h-full mx-auto p-2 flex items-center justify-center">
         <div className="flex flex-col gap-4 w-full p-4 text-gray-800">
           <h1>
@@ -35,42 +36,7 @@ function Hero() {
           </div>
 
           <div className="flex flex-col gap-4 items-center justify-center">
-            <div className="flex p-8 gap-8 items-center justify-center">
-              <a
-                className="hover:scale-110 ease-in duration-300"
-                href="https://www.linkedin.com/in/thomas-fisher-098ab496/"
-                target="_blank"
-              >
-                <SiLinkedin size={30} />
-              </a>
-              <a
-                className="hover:scale-110 ease-in duration-300"
-                href="https://github.com/FisherTom"
-                target="_blank"
-              >
-                <SiGithub size={30} />
-              </a>
-              <a
-                className="hover:scale-110 ease-in duration-300"
-                href="https://www.instagram.com/end.shape/"
-                target="_blank"
-              >
-                <SiInstagram size={30} />
-              </a>
-              <a
-                className="hover:scale-110 ease-in duration-300"
-                href="mailto:tfisher92@gmail.com"
-                target="_blank"
-              >
-                <AiOutlineMail size={30} />
-              </a>
-            </div>
-            <a href="https://fishertom.github.io/cv/" target="_blank">
-              <div className="hover:scale-110 ease-in duration-300 flex items-center justify-center gap-2 rounded-2xl  w-fit p-2">
-                <HiDocumentText size={30} />
-                <p className="font-bold">Link to CV</p>
-              </div>
-            </a>
+            <LinkBox />
             <div
               id="scroll"
               className={
@@ -84,7 +50,7 @@ function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

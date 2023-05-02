@@ -13,7 +13,7 @@ function countdown() {
       </div>
       <div className="p-16 max-w-[1240px] m-auto flex flex-col md:flex-row justify-center items-center gap-16 ">
         <div className="relative transform scale-75 shadow-xl shadow-gray-400 rounded-xl p-4 w-fit h-fit shrink order-2 md:order-1">
-          <div className="p-2 absolute right-4 top-5   animate-pulse">
+          <div className="p-2 absolute right-4 top-5 animate-pulse">
             <Image className="w-16 h-16" src={point} alt="/" />
           </div>
 

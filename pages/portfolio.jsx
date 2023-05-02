@@ -32,12 +32,7 @@ function brewlog() {
           </p>
 
           <h3>Links</h3>
-          <p>
-            Front-end repo -
-            <a className="text-blue-600" href="">
-              *LINK*
-            </a>
-          </p>
+          <p>You are already here!</p>
         </div>
       </div>
     </div>

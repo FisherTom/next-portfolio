@@ -8,7 +8,7 @@ function ProjectItem({ title, backgroundImg, projectUrl, stack }) {
       <Image
         className="object-cover rounded-lg group-hover:opacity-10 h-full w-auto"
         src={backgroundImg}
-        alt="/"
+        alt={`screenshot from ${title}`}
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <h3 className="w-full text-2xl text-white tracking-wider text-center">
@@ -19,10 +19,10 @@ function ProjectItem({ title, backgroundImg, projectUrl, stack }) {
             return i !== stack.length - 1 ? `${item} | ` : `${item}`;
           })}
         </p>
-        <Link href={projectUrl}>
-          <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+        <Link href={projectUrl} className="flex justify-center">
+          <button className="text-center px-10 py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer bg-none">
             More Info
-          </p>
+          </button>
         </Link>
       </div>
     </div>
