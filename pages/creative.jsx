@@ -15,19 +15,13 @@ function brewlog() {
         </div>
       </div>
       <div className="p-16 max-w-[1240px] m-auto flex flex-col  justify-center gap-16 ">
-        {/* <div className="flex gap-4 justify-evenly flex-wrap">
-          <div className=" justify-center shadow-xl shadow-gray-400 rounded-xl p-4 w-fit">
-            <Image className="max-w-[300px] " src={sketchImg} alt="/" />
-          </div>
-          <div className="  justify-center shadow-xl shadow-gray-400 rounded-xl p-4 w-fit  ">
-            <Image className="max-w-[300px] " src={sketchImg2} alt="/" />
-          </div>
-          <div className="  justify-center shadow-xl shadow-gray-400 rounded-xl p-4 w-fit ">
-            <Image className="max-w-[300px] " src={sketchImg3} alt="/" />
-          </div>
-        </div> */}
         <div className="flex justify-center items-center">
-          <Blocks />
+          {/* <Blocks /> */}
+          <iframe
+            src="https://bloooob.netlify.app/"
+            className="w-[450px] h-[450px] rounded-full"
+            scrolling="no"
+          ></iframe>
         </div>
         <div className=" flex flex-col gap-4">
           <p className="text-gray-600   ">
