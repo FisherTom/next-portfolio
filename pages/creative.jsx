@@ -1,9 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import sketchImg from "../public/assests/sketch1.jpg";
-import sketchImg2 from "../public/assests/sketch2.jpg";
-import sketchImg3 from "../public/assests/sketch3.jpg";
-import Blocks from "@/components/Blocks";
 
 function brewlog() {
   return (

@@ -19,7 +19,7 @@ function countdown() {
 
           <iframe
             src="https://count-down-game.netlify.app/"
-            className="w-[450px] h-[900px] "
+            className="w-[420px] h-[900px] "
           ></iframe>
         </div>
         <div className="order-1 md:order-2 flex flex-col gap-4">
